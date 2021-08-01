@@ -16,14 +16,14 @@ public class Empleados {
     String apellidoMaterno;
     int edad;
     String email;
-    int telefono;
+    double telefono;
     float salario;
     String hiredate;
     public void getDetails(){
         System.out.println("Id:" +Id);
         System.out.println("Nombre:" +nombre);
         System.out.println("Apellido paterno: " +apellidoPaterno);
-        System.out.println("Apellido materno : " +apellidoMaterno);
+        /*System.out.println("Apellido materno : " +apellidoMaterno);*/
         System.out.println("Age: " +edad);
         System.out.println("Email: " +email);
         System.out.println("Phone Number: " +telefono);

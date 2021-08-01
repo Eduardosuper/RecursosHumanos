@@ -5,6 +5,8 @@
  */
 package mx.edu.cesba.empleados;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author tprog
@@ -13,8 +15,8 @@ public class Main {
 
     public static void main(String[] args) {
         Empleados e1 = new Empleados();
-        Empleados e2= new Empleados();
-        e1.Id = 1;
+        Empleados e2 = new Empleados();
+        /* e1.Id = 1;
         e1.nombre = "Tiburcio";
         e1.apellidoPaterno = "Sanches";
         e1.apellidoMaterno = "Mora";
@@ -23,8 +25,34 @@ public class Main {
         e1.telefono = 2101616;
         e1.salario = 30000.00f;
         e1.hiredate = "24/07/2021";
-        
+        e2.Id = 2;
+        e2.nombre = "Miguel";
+        e2.apellidoPaterno = "gutierrez";
+        e2.apellidoMaterno = "arriaga";
+        e2.edad = 42;
+        e2.email = "miguel@cesba.mx";
+        e2.telefono = 2101245;
+        e2.salario = 40000.00f;
+        e2.hiredate = "31/07/2021";*/
+        e1.Id = Integer.parseInt(JOptionPane.showInputDialog("ingresa el Id"));
+        e1.nombre = JOptionPane.showInputDialog("Ingresa el nombre ");
+        e1.apellidoPaterno = JOptionPane.showInputDialog("Ingrese el Apellido");
+        e1.edad = Integer.parseInt(JOptionPane.showInputDialog("ingresa la edad"));
+        e1.email = JOptionPane.showInputDialog("Ingresa el correo");
+        e1.telefono = Double.parseDouble(JOptionPane.showInputDialog("ingresa el numero de telefono"));
+        e1.salario = Float.parseFloat(JOptionPane.showInputDialog("ingresa el salario"));
+        e1.hiredate = JOptionPane.showInputDialog("Ingresa la fecha de contratacion");
+        e2.Id = Integer.parseInt(JOptionPane.showInputDialog("ingresa el Id"));
+        e2.nombre = JOptionPane.showInputDialog("Ingresa el nombre ");
+        e2.apellidoPaterno = JOptionPane.showInputDialog("Ingrese el Apellido");
+        e2.edad = Integer.parseInt(JOptionPane.showInputDialog("ingresa la edad"));
+        e2.email = JOptionPane.showInputDialog("Ingresa el correo");
+        e2.telefono = Double.parseDouble(JOptionPane.showInputDialog("ingresa el numero de telefono"));
+        e2.salario = Float.parseFloat(JOptionPane.showInputDialog("ingresa el salario"));
+        e2.hiredate = JOptionPane.showInputDialog("Ingresa la fecha de contratacion");
         e1.getDetails();
-        
+        System.out.println("--------------");
+        e2.getDetails();
+
     }
 }

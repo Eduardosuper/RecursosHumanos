@@ -19,6 +19,7 @@ public class Empleados {
     double telefono;
     float salario;
     String hiredate;
+    //  
     public void getDetails(){
         System.out.println("Id:" +Id);
         System.out.println("Nombre:" +nombre);

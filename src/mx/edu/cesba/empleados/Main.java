@@ -16,6 +16,8 @@ public class Main {
     public static void main(String[] args) {
         Empleados e1 = new Empleados();
         Empleados e2 = new Empleados();
+        Departament d1=new Departament();
+        Job j1=new Job();
         /* e1.Id = 1;
         e1.nombre = "Tiburcio";
         e1.apellidoPaterno = "Sanches";
@@ -34,6 +36,7 @@ public class Main {
         e2.telefono = 2101245;
         e2.salario = 40000.00f;
         e2.hiredate = "31/07/2021";*/
+        //empleado
         e1.Id = Integer.parseInt(JOptionPane.showInputDialog("ingresa el Id"));
         e1.nombre = JOptionPane.showInputDialog("Ingresa el nombre ");
         e1.apellidoPaterno = JOptionPane.showInputDialog("Ingrese el Apellido");
@@ -50,9 +53,22 @@ public class Main {
         e2.telefono = Double.parseDouble(JOptionPane.showInputDialog("ingresa el numero de telefono"));
         e2.salario = Float.parseFloat(JOptionPane.showInputDialog("ingresa el salario"));
         e2.hiredate = JOptionPane.showInputDialog("Ingresa la fecha de contratacion");
+        //departament
+        d1.id=Integer.parseInt(JOptionPane.showInputDialog("ingresa el Id del departamento"));
+        d1.title=JOptionPane.showInputDialog("ingresa el titulo del departamento");
+        d1.location=JOptionPane.showInputDialog("ingresa la localizacion");
+        //Job
+        j1.id=Integer.parseInt(JOptionPane.showInputDialog("ingresa el Id del trabajo"));
+        j1.title=JOptionPane.showInputDialog("ingresa el titulo del trabajo");
+        j1.maxSalary=Double.parseDouble(JOptionPane.showInputDialog("ingresa el maximo salario"));
+        j1.minSalary=Double.parseDouble(JOptionPane.showInputDialog("ingresa el minimo salario"));
+        //getDetails
         e1.getDetails();
         System.out.println("--------------");
         e2.getDetails();
-
+        System.out.println("--------------");
+        d1.getDetails();
+        System.out.println("--------------");
+        j1.getDatails();
     }
 }
